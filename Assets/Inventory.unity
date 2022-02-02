@@ -391,6 +391,7 @@ GameObject:
   - component: {fileID: 545916932}
   - component: {fileID: 545916934}
   - component: {fileID: 545916935}
+  - component: {fileID: 545916936}
   m_Layer: 5
   m_Name: Planet (1)
   m_TagString: Untagged
@@ -484,6 +485,35 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &545916936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545916930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1147460772}
+          m_TargetAssemblyTypeName: Trade, Assembly-CSharp
+          m_MethodName: SellItem
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 545916934}
+            m_ObjectArgumentAssemblyTypeName: PlanetTrade, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &791198185
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 679, y: 595}
+  m_AnchoredPosition: {x: 679, y: 399}
   m_SizeDelta: {x: 1151.47, y: 138.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &886268121
@@ -842,6 +872,7 @@ GameObject:
   - component: {fileID: 1053368591}
   - component: {fileID: 1053368590}
   - component: {fileID: 1053368589}
+  - component: {fileID: 1053368593}
   m_Layer: 5
   m_Name: Planet (2)
   m_TagString: Untagged
@@ -935,6 +966,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053368587}
   m_CullTransparentMesh: 1
+--- !u!114 &1053368593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053368587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1147460772}
+          m_TargetAssemblyTypeName: Trade, Assembly-CSharp
+          m_MethodName: BuyPlanet
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1096806925
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +1035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -656, y: -26.210083}
+  m_AnchoredPosition: {x: -656, y: -26.20996}
   m_SizeDelta: {x: -1415.21, y: -204.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096806927
@@ -1175,7 +1235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 649, y: -26.210083}
+  m_AnchoredPosition: {x: 649, y: -26.20996}
   m_SizeDelta: {x: -1415.21, y: -204.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1180499428
@@ -1338,7 +1398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -610, y: 592}
+  m_AnchoredPosition: {x: -610, y: 396}
   m_SizeDelta: {x: 1151.47, y: 138.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345088022
@@ -1484,6 +1544,7 @@ GameObject:
   - component: {fileID: 1483865249}
   - component: {fileID: 1483865248}
   - component: {fileID: 1483865247}
+  - component: {fileID: 1483865251}
   m_Layer: 5
   m_Name: Planet (1)
   m_TagString: Untagged
@@ -1577,6 +1638,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483865245}
   m_CullTransparentMesh: 1
+--- !u!114 &1483865251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483865245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1147460772}
+          m_TargetAssemblyTypeName: Trade, Assembly-CSharp
+          m_MethodName: BuyPlanet
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1551631601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,7 +2161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -514, y: 562}
+  m_AnchoredPosition: {x: -514, y: 379}
   m_SizeDelta: {x: 275.743, y: 147.248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1780030410
@@ -2255,6 +2345,7 @@ GameObject:
   - component: {fileID: 1921948962}
   - component: {fileID: 1921948961}
   - component: {fileID: 1921948960}
+  - component: {fileID: 1921948964}
   m_Layer: 5
   m_Name: Planet (1)
   m_TagString: Untagged
@@ -2348,6 +2439,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921948958}
   m_CullTransparentMesh: 1
+--- !u!114 &1921948964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921948958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1147460772}
+          m_TargetAssemblyTypeName: Trade, Assembly-CSharp
+          m_MethodName: SellItem
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1921948961}
+            m_ObjectArgumentAssemblyTypeName: PlanetTrade, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1964864610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,6 +2547,7 @@ GameObject:
   - component: {fileID: 1992925569}
   - component: {fileID: 1992925568}
   - component: {fileID: 1992925567}
+  - component: {fileID: 1992925571}
   m_Layer: 5
   m_Name: Planet (1)
   m_TagString: Untagged
@@ -2520,6 +2641,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992925565}
   m_CullTransparentMesh: 1
+--- !u!114 &1992925571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992925565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1147460772}
+          m_TargetAssemblyTypeName: Trade, Assembly-CSharp
+          m_MethodName: SellItem
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1992925568}
+            m_ObjectArgumentAssemblyTypeName: PlanetTrade, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2010807848
 GameObject:
   m_ObjectHideFlags: 0

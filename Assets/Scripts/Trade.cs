@@ -16,9 +16,9 @@ public  class Trade : MonoBehaviour
   
   
 
-  public  void BuyPlanet(int coins)
+  public  void BuyPlanet()
   {
-    Playercoins -= coins;
+    Playercoins -= 10;
   }
 
   public  void SellItem(PlanetTrade planet)
