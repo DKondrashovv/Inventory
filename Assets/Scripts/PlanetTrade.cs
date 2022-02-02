@@ -2,9 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using UnityEditor;
 using UnityEngine;
 using UnityEditor.EventSystems;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PlanetTrade : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragHandler
 {
@@ -13,14 +15,24 @@ public class PlanetTrade : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDr
     private Vector3 startPosition;
     private Transform startBox;
     private CanvasGroup canvasGroup;
-    public int coin;
+    public int coins;
+    [SerializeField] private Text coinsPlanetText;
+    public Trade trade;
+    
+    
+    
     private void Awake()
     {
-        coin = 1;
+        
+        coins = 10;
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    
+    private void Update()
+    {
+        coinsPlanetText.text = coins.ToString();
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         transform.DOScale(Vector3.one * 1.5f, 0.3f);
@@ -49,10 +61,12 @@ public class PlanetTrade : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDr
         if (startBox == transform.parent)
         {
             transform.position = startPosition;
+            
         }
         else
         {
             transform.localPosition=Vector3.zero;
+            //trade.Playercoins -= coins;
         }
     }
 }

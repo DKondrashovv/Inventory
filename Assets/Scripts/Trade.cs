@@ -1,9 +1,33 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public static class Trade
+public  class Trade : MonoBehaviour
 {
-  public static int coins;
+  [SerializeField] private Text coinsText;
+  public  int Playercoins;
+  private void Start()
+  {
+    
+    Playercoins = 100;
+  }
   
+  
+
+  public  void BuyPlanet(int coins)
+  {
+    Playercoins -= coins;
+  }
+
+  public  void SellItem(PlanetTrade planet)
+  {
+    Playercoins += planet.coins;
+  }
+
+  private void Update()
+  {
+    coinsText.text = Playercoins.ToString();
+  }
 }
